@@ -22,7 +22,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <div style={ {border: 'solid', width: '200px', height: '200px',} } onClick={ this.onClick }>{ this.state.message }</div>
+      <div
+        style={ { border: 'solid', width: '200px', height: '200px' } }
+        onClick={ this.onClick }
+      >
+        { this.state.message }
+      </div>
     );
   }
 }

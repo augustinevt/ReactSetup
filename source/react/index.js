@@ -8,7 +8,6 @@ import thunk from 'redux-thunk';
 import App from './components/App';
 import reducer from './reducers';
 
-
 const middleware = [thunk];
 
 if (process.env.NODE_ENV !== 'production') {

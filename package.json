@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "css" : "node-sass source/application.scss -o dist ",
+    "css:watch" : "nodemon -e scss -x \"npm run css\"",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,5 +30,9 @@
     "request": "^2.79.0",
     "superagent": "^3.5.0",
     "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0"
   }
 }

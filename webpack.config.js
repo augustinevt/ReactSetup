@@ -2,10 +2,12 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
+  devtool: 'cheap-module-eval-source-maps',
   entry: './source/react/index.js',
   output: {
-    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/dist',
+    filename: 'bundle.js',
   },
   module: {
     loaders: [

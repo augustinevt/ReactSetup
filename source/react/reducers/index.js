@@ -1,13 +1,13 @@
 const initialState = {
-  language: 'english',
+  message: 'default message',
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'CHANGE_LANGUAGE':
-      const lang = action.language;
+    case 'CHANGE_MESSAGE':
+      const message = action.message;
 
-      return { language: lang }
+      return { message }
     default:
       return state;
   }

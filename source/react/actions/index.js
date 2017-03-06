@@ -1,17 +1,9 @@
-//
-export const changeLanguage = language => (dispatch, getState) => {
-  console.log('actions', getState())
-  dispatch({
-    type: 'CHANGE_LANGUAGE',
-    language,
-  });
-};
+import { api } from '../helpers/api';
 
-// export const changeLanguage = (language) => {
-//   console.log(language);
-//
-//   return {
-//     type: 'CHANGE_LANGUAGE',
-//     language,
-//   };
-// };
+export const changeMessage = message => (dispatch, getState) => {
+  // dispatch({ type: 'CHANGE_MESSAGE', message: "data.body" });
+  // console.log('hello from the action')
+  // api.default.get().then((data) => {
+  //   dispatch({ type: 'CHANGE_MESSAGE', message: "data.body" });
+  // });
+};

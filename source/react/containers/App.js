@@ -20,7 +20,7 @@ class App extends React.Component {
 
   onClick() {
     console.log("hello from the container", this.props);
-    this.changeMessage('foo');
+    this.props.changeMessage("foo");
   }
 
   render() {
